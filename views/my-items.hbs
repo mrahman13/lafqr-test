@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-sm-4">
+  </div>
+  <div class="col-sm-6">
+    <h2>My Items</h2>
+    <div class = "table-responsive">
+      <table class = "table">
+        <tr>
+          <th>Item Name</th>
+          <th>Lost</th>
+          <th>Description</th>
+        </tr>
+
+        {{#each items}}
+          <tr style="text-align: left;">
+            <td>{{name}}</td>
+            <td>{{lost}}</td>
+            <td>{{desc}}</td>
+          </tr>
+        {{/each}}
+
+      </table>
+    </div>
+
+  </div>
+</div>

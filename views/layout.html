@@ -1,0 +1,22 @@
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['layout.hbs'] = template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "                <li class =\"navbar-text\" style=\"color:white\">Welcome "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.user : depth0)) != null ? stack1.username : stack1), depth0))
+    + "</li>\n                <li><a href='/new-item'>New Item</a></li>\n                <li><a href='/my-items'>My Items</a></li>\n                <li><a href='/logout'>Logout</a></li>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    return "                <li><a href='/login'>Login</a></li>\n                <li><a href='/register'>Sign Up</a></li>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function";
+
+  return "<!DOCTYPE html>\n<html>\n  <head>\n    <title>"
+    + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
+    + "</title>\n    <script src=\"/libs/handlebars.runtime.js\"></script>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n    <link rel='stylesheet' href='/stylesheets/style.css'/>\n    <link href=\"https://fonts.googleapis.com/css?family=Lato\" rel=\"stylesheet\" type=\"text/css\">\n    <link href=\"https://fonts.googleapis.com/css?family=Montserrat\" rel=\"stylesheet\" type=\"text/css\">\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n  </head>\n  <body>\n    <nav class=\"navbar navbar-default navbar-fixed-top\">\n      <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n\n          <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n          </button>\n\n\n          <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\n\n            <ul class=\"nav navbar-nav navbar-left\">\n              <li><a href='/'>Home</a></li>\n            </ul>\n\n            <ul class=\"nav navbar-nav navbar-right\">\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.user : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + "            </ul>\n\n          </div>\n        </div>\n      </div>\n    </nav>\n\n    <div class=\"container\">\n      "
+    + ((stack1 = ((helper = (helper = helpers.body || (depth0 != null ? depth0.body : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"body","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + "\n    </div>\n  </body>\n</html>\n";
+},"useData":true});
+})();

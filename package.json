@@ -1,0 +1,29 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "description": "Users will register for our service. They will register items they own and care about and our application will create unique codes for them in the form of printable QR codes, which they will stick on their items (e.g. cell phone). Once an item is lost and recovered, its QR code can be scanned and our application will be notified of the event and the recovering party. Our application will act as the trusted third party and coordinate the return of the item.",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "author": "Alexander Kessaris, Joshua Seol, Muhamed M. Rahman, Wei Jie Chua",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^3.3.7",
+    "consolidate": "^0.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.1",
+    "hbs": "^4.0.1",
+    "jade": "~1.11.0",
+    "mongoose": "^4.8.6",
+    "morgan": "^1.9.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "passport-mongoose": "0.0.1",
+    "serve-favicon": "^2.5.0",
+    "swig": "^1.4.2"
+  }
+}
